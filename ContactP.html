@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="Portfolio.css" />
+    <link rel="shortcut icon" href="babinks.png" type="image/x-icon" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="logo">
+        <a href="index.html"> <img src="Logobi.png" alt="Logo" /></a>
+      </div>
+      <nav class="nav-links">
+        <a href="ÀProposDeMoi.html" target="_blank">À propos de moi</a>
+        <a href="BUT.html" target="_blank">Le BUT</a>
+        <a href="RapportDeStage.html" target="_blank">Rapport de stage</a>
+        <a href="ContactP.html" target="_blank">Contact</a>
+      </nav>
+    </header>
+    <br />
+
+    <div class="fond-rectangulaire"></div>
+    <div class="fond-rectangulaire2"></div>
+    <div class="fond-rectangulaire3"></div>
+    <div class="contenu">
+      <div class="intro">
+        <h1 class="Contact"><u>Si vous souhaitez me contacter :</u></h1>
+      </div>
+
+      <div class="container">
+        
+        <div class="columncontact" id="Tel">
+          <!-- Contenu de la colonne 2 -->
+          <p>
+            Vous pouvez retrouver mon numéro de téléphone ici <br /><a
+              href="tel:0668275353"
+              target="_blank"
+              class="icon-link"
+              ><img src="phone-icon.png" alt="Tel Icon"
+            /></a>
+          </p>
+        </div>
+        <div class="columncontact" id="Mail">
+          <!-- Contenu de la colonne 3 -->
+          <p>
+            Vous pouvez retrouver mon Mail ici <br />
+            <a
+              href="mailto:djilanibourhan@yahoo.fr"
+              target="_blank"
+              class="icon-link"
+              ><img src="mail-icon.jpg" alt="Mail Icon"
+            /></a>
+          </p>
+        </div>
+      </div>
+      <hr>
+      <div class="formulaire">
+        <div class="feedback-form">
+          <h2>Laissez moi votre avis ici :</h2>
+          <form id="feedbackForm">
+            <!-- Nom -->
+            <label for="name">Nom :</label>
+            <input type="text" id="name" name="name" required>
+
+            <!-- Adresse E-mail -->
+            <label for="email">Adresse E-mail :</label>
+            <input type="email" id="email" name="email" required>
+
+            <!-- URL de l'Article Lu 
+            <label for="blog_url">URL de l'Article Lu :</label>
+            <input type="url" id="blog_url" name="blog_url" required>
+-->
+            <!-- Thème de la Requête -->
+            <label for="topic">Thème de la Requête :</label>
+            <select id="topic" name="topic" required>
+                <option value="commentaire">Commentaire Général</option>
+                <option value="question">Question</option>
+                <option value="suggestion">Suggestion</option>
+                <option value="erreur">Rapport d'Erreur</option>
+                <option value="autre">Autre</option>
+            </select>
+
+            <!-- Note de l'Article 
+            <label for="rating">Note de l'Article :</label>
+            <select id="rating" name="rating" required>
+                <option value="5">5 - Excellent</option>
+                <option value="4">4 - Très Bon</option>
+                <option value="3">3 - Bon</option>
+                <option value="2">2 - Moyen</option>
+                <option value="1">1 - Mauvais</option>
+            </select> -->
+
+            <!-- Commentaires -->
+            <label for="comments">Commentaires :</label>
+            <textarea id="comments" name="comments" rows="5" required></textarea>
+
+            <!-- Suggestions d'Amélioration -->
+            <label for="suggestions">Suggestions d'Amélioration :</label>
+            <textarea id="suggestions" name="suggestions" rows="5"></textarea>
+
+            <!-- Bouton d'Envoi -->
+            <input type="submit" onclick="alert('Merci de votre réponse')" value="Envoyer">
+        </form>
+    </div>
+      </div>
+    </div>
+    <section class="contact">
+      <h3><a href="Contact.html">Contact</a></h3>
+      <p>
+        <a href="Contact.html"
+          >N'hésitez pas à me contacter pour toute opportunité de collaboration
+          ou simplement pour dire bonjour !</a
+        >
+      </p>
+      <a href="mailto:djilanibourhan@yahoo.fr"
+        ><p class="MailRed">Pour m'envoyer un Email cliquez ici</p></a
+      >
+    </section>
+  </body>
+</html>
