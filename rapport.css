@@ -259,7 +259,6 @@ hr {
   width: 100%;
   height: auto;
   border-radius: 10px;
-  margin-bottom: 15px;
 }
 
 .photo-columnQ figure {
@@ -269,6 +268,7 @@ hr {
 
 .photo-columnQ figcaption {
   margin-top: 5px;
+  margin-bottom: 30px;
   font-size: 14px;
   color: #333;
 }
