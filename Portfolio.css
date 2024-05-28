@@ -3,7 +3,7 @@
 /* Éléments de base */
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   background-color: white;
 }
 
@@ -12,108 +12,100 @@ h1 {
 }
 
 hr {
-  width: 70%; /* Définit la largeur de l'élément hr à 70% de la largeur de son conteneur */
-  height: 3px; /* Définit la hauteur de l'élément hr */
-  border: none; /* Supprime la bordure par défaut de l'élément hr */
-  background-color: #252323; /* Couleur de fond de l'élément hr */
-  margin: 20px auto; /* Centre l'élément hr horizontalement et ajoute une marge en haut et en bas */
-  border-radius: 10px; /* Ajoute un arrondi aux coins de l'élément hr */
+  width: 70%; 
+  height: 3px;
+  border: none; 
+  background-color: #252323; 
+  margin: 20px auto; 
+  border-radius: 10px;
 }
 
 /* Header */
-
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 130px;
   width: 100%;
-  background-color: black; /* Couleur de fond du header */
-  color: #fff; /* Couleur du texte */
+  background-color: black; 
+  color: #fff;
+  padding: 0 20px;
 }
 
 .logo img {
-  height: 100px; /* Hauteur du logo */
-  margin-left: 250px;
+  height: 100px; 
 }
 
 .nav-links {
   display: flex;
-  gap: 70px; /* Espace entre les liens */
-  margin-right: 150px;
+  gap: 20px;
 }
 
 .nav-links a {
-  color: #fff; /* Couleur des liens */
-  text-decoration: none; /* Pas de soulignement */
-  font-size: 21px; /* Taille de la police */
+  color: #fff; 
+  text-decoration: none;
+  font-size: 1rem;
 }
 
 .nav-links a:hover {
-  text-decoration: underline; /* Soulignement au survol */
+  text-decoration: underline;
 }
 
 /* Main */
-
 .main {
-  font-size: 16px;
+  font-size: 1rem;
 }
 
-.fond-rectangulaire {
-  position: fixed;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 80%;
-  height: 100%;
-  background-color: #c9c9c9; /* Couleur de fond du rectangle */
-  z-index: -1; /* Pour placer le rectangle derrière le contenu */
-}
-.fond-rectangulaire2 {
-  position: fixed;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 80.5%;
-  height: 100%;
-  background-color: #dadada; /* Couleur de fond du rectangle */
-  z-index: -2; /* Pour placer le rectangle derrière le contenu */
-}
-
+.fond-rectangulaire,
+.fond-rectangulaire2,
 .fond-rectangulaire3 {
   position: fixed;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 81%;
+  width: 100%;
   height: 100%;
-  background-color: #e9e9e9; /* Couleur de fond du rectangle */
-  z-index: -3; /* Pour placer le rectangle derrière le contenu */
+}
+
+.fond-rectangulaire {
+  background-color: #c9c9c9; 
+  z-index: -1;
+}
+.fond-rectangulaire2 {
+  background-color: #dadada; 
+  z-index: -2;
+}
+.fond-rectangulaire3 {
+  background-color: #e9e9e9; 
+  z-index: -3;
 }
 
 .contenu {
   position: relative;
-  z-index: 1; /* Pour placer le contenu au-dessus du rectangle */
-  text-align: center; /* Pour aligner le texte au centre */
-  margin-left: 10%;
+  z-index: 1;
+  text-align: center;
+  margin: 0 auto;
   width: 80%;
 }
 
 section {
   padding: 30px 20px;
 }
+
 .contact {
   background-color: #333;
   color: #fff;
   text-align: center;
+  padding: 20px;
 }
+
 .contact a {
-  color: #fff; /* Couleur des liens */
-  text-decoration: none; /* Pas de soulignement */
+  color: #fff;
+  text-decoration: none;
 }
 
 .contact a:hover {
-  text-decoration: underline; /* Soulignement au survol */
+  text-decoration: underline;
 }
 
 .MailRed {
@@ -122,21 +114,17 @@ section {
 }
 
 /* Accueil Séparation */
-
 .container {
   display: flex;
-  justify-content: space-between;
-  width: 100%;
-  box-sizing: border-box;
-  padding: 10px;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .column {
-  flex: 1;
   padding: 10px;
   box-sizing: border-box;
-  border-left: 1px solid #000000;
-  border-right: 1px solid #000000;
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
   margin: 5px;
 }
 
@@ -150,59 +138,57 @@ section {
 }
 
 #mid img {
-  height: 170px; /* Hauteur des images */
+  width: 100%;
+  max-height: 170px;
   object-fit: cover;
   border-radius: 15px;
 }
 
 #mid figcaption {
-  margin-top: 10px; /* Espacement entre l'image et la légende */
-  font-size: 14px;
-  color: #000000;
+  margin-top: 10px; 
+  font-size: 0.875rem;
+  color: #000;
 }
 
 .container a {
   color: rgb(65, 133, 169);
-  text-decoration: none; /* Pas de soulignement */
+  text-decoration: none;
 }
 
 .container a:hover {
-  text-decoration: underline; /* Soulignement au survol */
+  text-decoration: underline;
 }
 
 .outro a {
   color: rgb(17, 17, 17);
-  text-decoration: none; /* Pas de soulignement */
+  text-decoration: none;
 }
 
 .outro a:hover {
-  text-decoration: underline; /* Soulignement au survol */
+  text-decoration: underline;
 }
 
-/* jeu jui qui */
-
+/* Jeu Qui */
 .juiki {
   font-family: "Poppins", sans-serif;
-  margin-left: 45%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
 /* Styles pour le jeu "Qui est-ce ?" */
-
 .game-board {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-gap: 20px;
-  padding: 50px;
+  padding: 20px;
   background-color: grey;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
   border-radius: 15px;
-  margin: auto;
-  width: calc(
-    4 * (200px + 50px) + 3 * 20px + 100px
-  ); /* largeur totale calculée */
-  margin-bottom: 20px;
+  margin: 0 auto;
 }
+
 .card {
   perspective: 1000px;
   cursor: pointer;
@@ -215,8 +201,8 @@ section {
 
 .card-inner {
   position: relative;
-  width: 200px; /* taille de base de la carte */
-  height: 250px; /* taille de base de la carte */
+  width: 100%;
+  padding-bottom: 125%;
   transform-style: preserve-3d;
   transition: transform 0.6s;
 }
@@ -267,26 +253,14 @@ section {
 }
 
 .card-back img {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain;
   border-radius: 10px;
 }
 
 /* Contact */
-
 .icon-link img {
-  width: 25px; /* Largeur de l'icône */
-  height: auto; /* Hauteur automatique pour maintenir le ratio */
-  margin-left: 2px; /* Marge à gauche de l'icône */
-}
-
-.container {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  box-sizing: border-box;
-  padding: 10px;
+  width: 25px;
+  height: auto;
+  margin-left: 2px;
 }
 
 .columncontact {
@@ -304,7 +278,6 @@ section {
 }
 
 /* Formulaire Contact */
-
 .formulaire {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -319,7 +292,7 @@ section {
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  width: 100%;
+  width: 90%;
   max-width: 600px;
   margin: 20px;
 }
@@ -347,9 +320,11 @@ section {
   border-radius: 4px;
   box-sizing: border-box;
 }
+
 .feedback-form textarea {
   resize: vertical;
 }
+
 .feedback-form input[type="submit"] {
   background-color: #28a745;
   color: #fff;
@@ -359,270 +334,133 @@ section {
   cursor: pointer;
   margin-top: 15px;
 }
+
 .feedback-form input[type="submit"]:hover {
   background-color: #218838;
 }
 
 /* BUT */
-
 /* BUT intro */
-
 .IntroBUT {
-  width: 40%; /* Largeur du rectangle */
-  background-color: #2d2d2d; /* Couleur de fond gris foncé */
-  border: 2px solid #ccc; /* Bordure grise */
+  width: 90%;
+  max-width: 600px;
+  background-color: #2d2d2d;
+  border: 2px solid #ccc;
   padding: 20px;
-  margin-top: 25px;
-  margin-bottom: 25px;
-  position: flex;
-  margin-left: 30%;
-  color: #fff; /* Couleur du texte en blanc */
-  border-radius: 15px; /* Coins arrondis */
+  margin: 25px auto;
+  color: #fff;
+  border-radius: 15px;
 }
 
 .IntroBUT h1 {
   text-align: center;
-  font-size: 24px; /* Taille de la police du titre */
-  margin: 0 0 15px 0; /* Marge en bas du titre */
-  font-family: "Cambria", Georgia, Times, "Times New Roman", serif;
+  font-size: 1.5rem;
+  margin: 0 0 15px 0;
 }
 
 .IntroBUT p {
   text-align: center;
-  font-size: 16px; /* Taille de la police du paragraphe */
+  font-size: 1rem;
   margin: 0;
   line-height: 1.5;
-  font-family: "Arial", sans-serif;
 }
 
 /* BUT retour */
-
 .RetourBUT {
-  width: 70%; /* Largeur du rectangle */
+  width: 90%;
+  max-width: 1000px;
   background-color: white;
-  border: 2px solid #ccc; /* Bordure grise */
+  border: 2px solid #ccc;
   padding: 20px;
-  margin: 25px auto; /* Centré horizontalement */
+  margin: 25px auto;
   display: flex;
-  align-items: center; /* Alignement vertical centré */
-  justify-content: space-between; /* Espace entre les images et le texte */
-  color: #000000; /* Couleur du texte en noir */
-  border-radius: 15px; /* Coins arrondis */
+  flex-direction: column;
+  align-items: center;
+  color: #000;
+  border-radius: 15px;
 }
 
 .RetourBUT img {
-  height: 230px; /* Hauteur des images */
+  width: 100%;
+  max-height: 230px;
   object-fit: cover;
   border-radius: 15px;
 }
 
 .RetourBUT .text-container {
-  flex: 1;
-  margin: 0 15px; /* Espace entre le texte et les images */
+  margin-top: 15px;
   text-align: center;
 }
 
 .RetourBUT h1 {
   text-align: center;
-  font-size: 24px; /* Taille de la police du titre */
-  margin: 0 0 15px 0; /* Marge en bas du titre */
-  font-family: "Cambria", Georgia, Times, "Times New Roman", serif;
+  font-size: 1.5rem;
+  margin: 0 0 15px 0;
 }
 
 .RetourBUT p {
   text-align: center;
-  font-size: 16px; /* Taille de la police du paragraphe */
+  font-size: 1rem;
   margin: 0;
   line-height: 1.5;
-  font-family: "Arial", sans-serif;
 }
 
-/* BUT sondage */
+/* Media Queries */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
-.sondage {
-  width: 75%; /* Largeur du rectangle */
-  background-color: white;
-  border: 2px solid #ccc; /* Bordure grise */
-  padding: 20px;
-  margin: 25px auto; /* Centré horizontalement */
-  border-radius: 15px; /* Coins arrondis */
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .logo img {
+    height: 80px;
+  }
+
+  .column {
+    border-left: none;
+    border-right: none;
+    margin: 0;
+  }
+
+  .game-board {
+    grid-template-columns: 1fr;
+  }
+
+  .RetourBUT img {
+    max-height: 150px;
+  }
+
+  .IntroBUT, .RetourBUT {
+    width: 100%;
+    max-width: 90%;
+  }
 }
 
-.sondage .text-container {
-  text-align: center;
-  margin-bottom: 15px; /* Espacement entre le titre et les images */
-}
+@media (max-width: 480px) {
+  .header {
+    padding: 10px;
+  }
 
-.sondage h1 {
-  font-size: 24px; /* Taille de la police du titre */
-  margin: 0; /* Aucune marge en bas du titre */
-  font-family: "Cambria", Georgia, Times, "Times New Roman", serif;
-}
+  .nav-links a {
+    font-size: 0.875rem;
+  }
 
-.sondage .image-container {
-  display: flex;
-  justify-content: space-between; /* Espace entre les images */
-  align-items: flex-start;
-}
+  .column {
+    padding: 5px;
+  }
 
-.sondage figure {
-  margin: 0;
-  text-align: center;
-}
+  .feedback-form {
+    width: 100%;
+    padding: 10px;
+  }
 
-.sondage img {
-  height: 230px; /* Hauteur des images */
-  object-fit: cover;
-  border-radius: 15px;
-}
-
-.sondage figcaption {
-  margin-top: 10px; /* Espacement entre l'image et la légende */
-  font-size: 14px;
-  color: #000000;
-}
-
-/* Nuage de mot */
-
-.NuageDeMot {
-  width: 70%; /* Largeur du rectangle */
-  background-color: white;
-  border: 2px solid #ccc; /* Bordure grise */
-  padding: 20px;
-  margin: 25px auto; /* Centré horizontalement */
-  border-radius: 15px; /* Coins arrondis */
-}
-
-.NuageDeMot .text-container {
-  text-align: center;
-  margin-bottom: 15px; /* Espacement entre le titre et les images */
-}
-
-.NuageDeMot h1 {
-  font-size: 24px; /* Taille de la police du titre */
-  margin: 0; /* Aucune marge en bas du titre */
-  font-family: "Cambria", Georgia, Times, "Times New Roman", serif;
-}
-
-.NuageDeMot .image-container {
-  display: flex;
-  justify-content: space-between; /* Espace entre les images */
-  align-items: center;
-}
-
-.NuageDeMot figure {
-  margin: 0;
-  text-align: center;
-}
-
-.NuageDeMot img {
-  height: 300px; /* Hauteur des images */
-  object-fit: cover;
-}
-
-.NuageDeMot figcaption {
-  margin-top: 10px; /* Espacement entre l'image et la légende */
-  font-size: 14px;
-  color: #000000;
-}
-
-/* audio */
-.audio {
-  width: 75%; /* Largeur du rectangle */
-  background-color: white;
-  border: 2px solid #ccc; /* Bordure grise */
-  padding: 20px;
-  margin: 25px auto; /* Centré horizontalement */
-  border-radius: 15px; /* Coins arrondis */
-}
-
-.audio .text-container {
-  text-align: center;
-  margin-bottom: 15px; /* Espacement entre le titre et les audios */
-}
-
-.audio h1 {
-  font-size: 24px; /* Taille de la police du titre */
-  margin: 0; /* Aucune marge en bas du titre */
-  font-family: "Cambria", Georgia, Times, "Times New Roman", serif;
-}
-
-.audio .audio-container {
-  display: flex;
-  justify-content: space-around; /* Espace autour des audios */
-  align-items: flex-start;
-  margin-bottom: 15px; /* Espacement entre les lignes de conteneurs audio */
-}
-
-.audio figure {
-  margin: 0;
-  text-align: center;
-  flex: 1; /* Pour permettre la flexibilité des éléments */
-}
-
-.audio audio {
-  border-radius: 15px;
-}
-
-.audio figcaption {
-  margin-top: 10px; /* Espacement entre l'audio et la légende */
-  font-size: 14px;
-  color: #000000;
-}
-
-.audio .audio-container {
-  display: flex;
-  justify-content: space-between; /* Espace entre les audios */
-  align-items: flex-start;
-}
-
-/* avenir */
-
-.AvenirBUT {
-  width: 70%; /* Largeur du rectangle */
-  background-color: white;
-  border: 2px solid #ccc; /* Bordure grise */
-  padding: 20px;
-  margin: 25px auto; /* Centré horizontalement */
-  display: flex;
-  align-items: center; /* Alignement vertical centré */
-  color: #000000; /* Couleur du texte en noir */
-  border-radius: 15px; /* Coins arrondis */
-}
-
-.AvenirBUT .left-images,
-.AvenirBUT .right-images {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.AvenirBUT img {
-  height: 230px; /* Hauteur des images */
-  object-fit: cover;
-  border-radius: 15px;
-  border: 2px solid gray;
-  margin: 40px 0; /* Espacement entre les images */
-}
-
-.AvenirBUT .text-container {
-  flex: 1;
-  margin: 0 15px; /* Espace entre le texte et les images */
-  text-align: center;
-}
-
-.AvenirBUT h1 {
-  text-align: center;
-  font-size: 24px; /* Taille de la police du titre */
-  margin: 0 0 15px 0; /* Marge en bas du titre */
-  font-family: "Cambria", Georgia, Times, "Times New Roman", serif;
-}
-
-.AvenirBUT p {
-  text-align: center;
-  font-size: 16px; /* Taille de la police du paragraphe */
-  margin: 0;
-  line-height: 1.5;
-  font-family: "Arial", sans-serif;
+  .IntroBUT, .RetourBUT {
+    padding: 10px;
+  }
 }
