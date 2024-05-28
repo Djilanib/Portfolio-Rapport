@@ -1,102 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header class="header">
-    <div class="logo">
-      <img src="logo.png" alt="Logo">
-    </div>
-    <nav class="nav-links">
-      <a href="#">Link 1</a>
-      <a href="#">Link 2</a>
-      <a href="#">Link 3</a>
-    </nav>
-  </header>
-  <main class="main">
-    <div class="fond-rectangulaire"></div>
-    <div class="fond-rectangulaire2"></div>
-    <div class="fond-rectangulaire3"></div>
-    <div class="contenu">
-      <section>
-        <h1>Section Title</h1>
-        <p>Some content here...</p>
-      </section>
-      <hr>
-      <section class="container">
-        <div class="column">
-          <p>Column content...</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page d'accueil</title>
+    <link rel="stylesheet" href="Portfolio.css" />
+    <link rel="shortcut icon" href="babinks.png" type="image/x-icon" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="logo">
+        <a href="index.html"> <img src="Logobi.png" alt="Logo" /></a>
+      </div>
+      <nav class="nav-links">
+        <a href="ÀProposDeMoi.html" target="_blank">À propos de moi</a>
+        <a href="BUT.html" target="_blank">Le BUT</a>
+        <a href="RapportDeStage.html" target="_blank">Rapport de stage</a>
+        <a href="ContactP.html" target="_blank">Contact</a>
+      </nav>
+    </header>
+    <main class="main">
+      <div class="fond-rectangulaire"></div>
+      <div class="fond-rectangulaire2"></div>
+      <div class="fond-rectangulaire3"></div>
+
+      <div class="contenu">
+        <div class="intro">
+          <h1>Bonjour à tous</h1>
+          <p>Je suis Djilani Bourhan et vous êtes sur mon Portfolio !</p>
+          <hr />
+          <h4>Je me présente, je suis à la fois :</h4>
+          <br />
         </div>
-        <div class="column" id="mid">
-          <figure>
-            <img src="image.jpg" alt="Image description">
-            <figcaption>Caption for the image.</figcaption>
-          </figure>
-        </div>
-        <div class="column">
-          <p>Column content...</p>
-        </div>
-      </section>
-      <hr>
-      <section class="juiki">
-        <h2>Qui est-ce ?</h2>
-        <div class="game-board">
-          <div class="card">
-            <input type="checkbox" id="card1">
-            <label class="card-inner" for="card1">
-              <div class="card-front">
-                <p>Question</p>
-              </div>
-              <div class="card-back">
-                <img src="answer.jpg" alt="Answer image">
-              </div>
-            </label>
+
+        <div class="container">
+          <div class="column" id="Lecture">
+            <!-- Contenu de la colonne 1 -->
+            <h5><u>Passionné de Lecture</u></h5>
+            <p>
+              C'est ma passion des livres qui m'a fait rentrer dans ce BUT, qui
+              m'a motivé à poursuivre dans cette voie pendant 2 ans, qui m'a
+              poussé à effectuer deux stages, en libragirie et en bibliothèque.
+            </p>
+            <p>
+              Grâce au BUT Métiers du Livre, j'ai pu développer de nombreuses
+              qualités et compétences, découvrir le monde du livre et faire mes
+              premiers pas dans le monde du travail.
+            </p>
+            <a href="ÀProposDeMoi.html" target="_blank"
+              >Retrouvez le récapitulatif de mon évolution ici.</a
+            >
           </div>
-          <!-- Repeat for more cards -->
+          <div class="column" id="mid">
+            <!-- Contenu de la colonne 2 -->
+            <h5><u>ET</u></h5>
+            <figure>
+              <img
+                src="DjilaniLecture.png"
+                alt="Djilani enfant en train de lire"
+              />
+              <figcaption>
+                La passion de la lecture dès mon plus jeune âge...
+              </figcaption>
+            </figure>
+          </div>
+          <div class="column" id="Info">
+            <!-- Contenu de la colonne 3 -->
+            <h5><u>Passionné d'Informatique</u></h5>
+            <p>
+              C'est ma passion de l'Informatique qui m'a donné l'idée de rendre
+              mon Portfolio et mon rapport de stage sous forme de site Web que
+              j'ai codé moi même de A à Z.
+            </p>
+            <p>
+              J'ai pu utiliser ma passion de l'Informatique lors de projets du
+              BUT comme ce Portolio et mon Rapport de Stage mais également lors
+              de mon stage dans la Médiathèque du Parchamp.
+            </p>
+            <a href="RapportDeStage.html" target="_blank"
+              >Retrouvez mon rapport de stage ici.</a
+            >
+          </div>
         </div>
-      </section>
-      <hr>
-      <section class="contact">
-        <div class="icon-link">
-          <img src="phone-icon.png" alt="Phone icon">
-          <a href="tel:+1234567890">+1 234 567 890</a>
+
+        <div class="outro">
+          <h4>Sur ce site :</h4>
+
+          <p>
+            Je vais donc vous parler de
+            <a href="ÀProposDeMoi.html" target="_blank">moi</a>, du
+            <a href="BUT.html" target="_blank">BUT</a>, de mon
+            <a href="BUT.html" target="_blank">stage</a>
+            <br />
+            et je vais le faire grâce à l'informatique, et plus précisément le
+            développement de sites web
+          </p>
         </div>
-        <div class="icon-link">
-          <img src="mail-icon.png" alt="Mail icon">
-          <a href="mailto:email@example.com">email@example.com</a>
-        </div>
-      </section>
-      <hr>
-      <section class="formulaire">
-        <form class="feedback-form">
-          <h2>Contact Us</h2>
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required>
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required>
-          <label for="message">Message:</label>
-          <textarea id="message" name="message" rows="5" required></textarea>
-          <input type="submit" value="Send">
-        </form>
-      </section>
-      <hr>
-      <section class="IntroBUT">
-        <h1>Intro to BUT</h1>
-        <p>Introduction content...</p>
-      </section>
-      <hr>
-      <section class="RetourBUT">
-        <img src="but.jpg" alt="BUT image">
-        <div class="text-container">
-          <h1>Retour de BUT</h1>
-          <p>Content about BUT...</p>
-        </div>
-      </section>
-    </div>
-  </main>
-</body>
+      </div>
+    </main>
+    <!-- Section de contact -->
+    <section class="contact">
+      <h3><a href="Contact.html">Contact</a></h3>
+      <p>
+        <a href="Contact.html"
+          >N'hésitez pas à me contacter pour toute opportunité de collaboration
+          ou simplement pour dire bonjour !</a
+        >
+      </p>
+      <a href="mailto:djilanibourhan@yahoo.fr"
+        ><p class="MailRed">Pour m'envoyer un Email cliquez ici</p></a
+      >
+    </section>
+  </body>
 </html>
